@@ -1,0 +1,27 @@
+\ProvidesPackage{utils}
+\RequirePackage{title}
+
+\renewcommand{\maketitle}{\begin{center}
+\cobptitle
+\rules
+\toe
+\end{center}}
+
+\renewcommand{\thesection}{
+  \normalsize\sffamily
+  第\arabic{section}题}
+\renewcommand{\thesubsection}{
+  \normalsize\sffamily
+  \arabic{section}-\arabic{subsection}}
+\renewcommand{\thesubsubsection}{
+  \normalsize\sffamily
+  \arabic{section}-\arabic{subsection}-\arabic{subsubsection}}
+
+\newcommand{\question}[2][0]{
+  \section{\normalsize\normalfont #2\textbf{（#1分）}}}
+\newcommand{\subquestion}[1]{
+  \subsection{\normalsize\normalfont #1}}
+\newcommand{\subsubquestion}[1]{
+  \subsubsection{\normalsize\normalfont #1}}
+
+\newcommand{\bold}[1]{\textsf{\textbf{#1}}}

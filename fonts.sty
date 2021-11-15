@@ -1,0 +1,18 @@
+\ProvidesPackage{fonts}
+
+\RequirePackage{fontspec}
+\setmainfont{Source Serif Pro}
+\setsansfont{Source Sans Pro}
+\setmonofont{JetBrains Mono NL}
+\newfontface{\EmojiFont}{Segoe UI Emoji}[Renderer=HarfBuzz]
+
+\RequirePackage{ctex}
+\setCJKmainfont{Source Han Serif SC}[ItalicFont={KaiTi}]
+\setCJKsansfont{Source Han Mono SC}[
+  BoldFont={Source Han Mono SC Bold},
+  ItalicFont={KaiTi}
+]
+\setCJKmonofont{Source Han Sans SC}
+
+\RequirePackage{unicode-math}
+\setmathfont{XITS Math}

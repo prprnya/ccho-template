@@ -1,0 +1,45 @@
+\ProvidesPackage{title}
+
+\newcommand{\cobptitle}{
+{\LARGE\sffamily\bfseries\@title}
+\begin{flushright}
+  \large \textbf{命题人：}\@author
+\end{flushright}
+}
+
+\newcommand{\rules}{
+\begin{flushleft}\begin{itemize}
+  \item 考试时间\textbf{3小时}。迟到超过\textbf{半小时}者不能进考场。开始考试后\textbf{1小时}内不得离场。时间到，把试卷（背面朝上）放在桌面上，立即起立撤离考场。
+  \item 试卷装订成册，不得拆散。所有解答必须写在指定的方框内，不得用铅笔填写。草稿纸在最后一页。不得持有任何其他纸张。
+  \item 姓名、报名号和所属学校必须写在首页左侧指定位置，写在其他地方者按废卷论处。
+  \item 允许使用非编程计算器以及直尺等文具。
+\end{itemize}\end{flushleft}
+}
+
+\newcommand{\toe}{
+\begin{tabular}{|*{18}{c|}}
+  \cline{1-1} \cline{18-18}
+  H & \multicolumn{16}{@{}c@{}|}{相对原子质量} & He
+  \\ \cline{1-2} \cline{13-18}
+  Li & Be & \multicolumn{10}{@{}c@{}|}{} & B & C & N & O & F & Ne
+  \\ \cline{1-2} \cline{13-18}
+  Na & Mg & \multicolumn{10}{@{}c@{}|}{} & Al & Si & P & S & Cl & Ar
+  \\ \hline
+  K & Ca & Sc & Ti & V & Cr & Mn & Fe & Co & Ni & Cu & Zn & Ga & Ge & As & Se & Br & Kr
+  \\ \hline
+  Rb & Sr & Y & Zr & Nb & Mo & Tc & Ru & Rh & Pd & Ag & Cd & In & Sn & Sb & Te & I & Xe
+  \\ \hline
+  Cs & Ba & La* & Hf & Ta & W & Re & Os & Ir & Pt & Au & Hg & Tl & Pb & Bi & Po & At & Rn
+  \\ \hline
+  Fr & Ra & Ac* & Rf & Db & Sg & Bh & Hs & Mt & Ds & Rg & Cn & Nh & Fl & Mc & Lv & Ts & Og
+  \\ \hline
+\end{tabular}
+
+\begin{tabular}{|*{15}{c|}}
+  \multicolumn{15}{c}{} \\ \hline
+  La & Ce & Pr & Nd & Pm & Sm & Eu & Gd & Tb & Dy & Ho & Er & Tm & Yb & Lu
+  \\ \hline
+  Ac & Th & Pa & U & Np & Pu & Am & Cm & Bk & Cf & Es & Fm & Md & No & Lr
+  \\ \hline
+\end{tabular}
+}
